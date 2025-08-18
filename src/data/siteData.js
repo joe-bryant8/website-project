@@ -1,11 +1,12 @@
 export const profile = {
   name: "Joseph Bryant",
   title: "Software Developer",
-  company: "Masters in Applied Data Science - UNC Chapel Hill",
+  company: "Masters in Applied Data Science",
   location: "City, State",
-  blurb: "Short one-sentence summary about your role, specialties, and impact.",
-  photo: "/headshot.jpg", // put a headshot in /public
-  resumeUrl: "/resume.pdf", // put your PDF in /public
+  blurb:
+    "Software engineer specializing in TypeScript and single-page applications, while currently expanding my skillset with data science methodologies and new roles.",
+  photo: "/headshot.jpg",
+  resumeUrl: "/resume.pdf",
   links: [
     { label: "Email", href: "mailto:joe.a.bryant8@gmail.com", icon: "mail" },
     {
@@ -13,10 +14,8 @@ export const profile = {
       href: "https://www.linkedin.com/in/joseph-a-bryant/",
       icon: "linkedin",
     },
-    // { label: "GitHub", href: "https://github.com/yourhandle", icon: "github" },
-    // add more if you want: { label: "X", href: "...", icon: "x" }
   ],
-  bannerUrl: "/header.jpg", // optional hero banner
+  bannerUrl: "/header.jpg",
 };
 
 export const experience = [
