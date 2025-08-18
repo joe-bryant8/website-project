@@ -28,7 +28,7 @@ function EduCard({ item }) {
 
 export default function EducationSection() {
   return (
-    <Section id="education" title="Education">
+    <Section id="education" title="Education" centerTitle>
       <div className="grid gap-4 sm:grid-cols-2">
         {education.map((e, i) => (
           <EduCard key={i} item={e} />

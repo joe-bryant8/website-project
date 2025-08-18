@@ -3,7 +3,6 @@ import Hero from "./components/Hero";
 import ExperienceSection from "./components/ExperienceSection";
 import EducationSection from "./components/EducationSection";
 import SkillsSection from "./components/SkillsSection";
-import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -12,7 +11,6 @@ export default function App() {
       <ExperienceSection />
       <EducationSection />
       <SkillsSection />
-      <Footer />
     </main>
   );
 }

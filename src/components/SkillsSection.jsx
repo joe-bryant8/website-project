@@ -40,7 +40,7 @@ function Group({ title, items }) {
 
 export default function SkillsSection() {
   return (
-    <Section id="skills" title="Skills">
+    <Section id="skills" title="Skills" centerTitle>
       <div className="grid gap-4 sm:grid-cols-2">
         <Group title="Technical Skills" items={skills.technical} />
         <Group title="Frameworks & Tools" items={skills.frameworks} />
