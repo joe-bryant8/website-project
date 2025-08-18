@@ -4,7 +4,6 @@ import { education } from "../data/siteData";
 function EduCard({ item }) {
   return (
     <div className="relative rounded-xl border border-white/10 bg-neutral-900 p-5">
-      {/* Logo in top-right (shrinks on smaller screens) */}
       {item.logo && (
         <div className="absolute right-3 top-3 sm:right-4 sm:top-4 rounded bg-white/10 p-0.5 sm:p-1">
           <img
@@ -15,7 +14,6 @@ function EduCard({ item }) {
         </div>
       )}
 
-      {/* Reserve space on the right so text never overlaps the logo */}
       <div className="pr-16 sm:pr-20">
         <h3 className="text-lg font-semibold text-white">{item.degree}</h3>
         <p className="text-neutral-300">{item.school}</p>

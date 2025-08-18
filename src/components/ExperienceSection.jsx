@@ -20,7 +20,6 @@ function RoleCard({ item }) {
 export default function ExperienceSection() {
   return (
     <section id="experience" className="py-12 sm:py-16">
-      {/* Center the whole section and cap width */}
       <div className="mx-auto w-full max-w-3xl px-4 sm:px-6">
         <h2 className="mb-6 text-center text-3xl font-semibold tracking-tight text-white">
           Experience

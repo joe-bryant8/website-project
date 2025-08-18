@@ -25,7 +25,6 @@ function SkillBar({ name, percent }) {
 }
 
 function Group({ title, items }) {
-  // sort descending by percent for each card
   const sorted = [...items].sort((a, b) => b.percent - a.percent);
   return (
     <div className="rounded-xl border border-white/10 bg-neutral-900 p-5">
