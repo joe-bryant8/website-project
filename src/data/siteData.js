@@ -89,10 +89,10 @@ export const skills = {
     { name: "HTML / CSS", percent: 80 },
   ],
   frameworks: [
-    { name: "React", percent: 70 },
+    { name: "React", percent: 75 },
     { name: "Angular", percent: 85 },
-    { name: "Express", percent: 80 },
     { name: "TensorFlow", percent: 65 },
+    { name: "Streamlit", percent: 70 },
   ],
   softSkills: [
     { name: "Agile", percent: 90 },
