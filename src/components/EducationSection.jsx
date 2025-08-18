@@ -4,24 +4,26 @@ import { education } from "../data/siteData";
 function EduCard({ item }) {
   return (
     <div className="relative rounded-xl border border-white/10 bg-neutral-900 p-5">
-      {/* Logo in top-right */}
+      {/* Logo in top-right (shrinks on smaller screens) */}
       {item.logo && (
-        <div className="absolute right-4 top-4 rounded bg-white/10 p-1">
+        <div className="absolute right-3 top-3 sm:right-4 sm:top-4 rounded bg-white/10 p-0.5 sm:p-1">
           <img
             src={item.logo}
             alt={`${item.school} logo`}
-            className="h-10 w-10 object-contain"
+            className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 object-contain"
           />
         </div>
       )}
 
-      <h3 className="text-lg font-semibold text-white">{item.degree}</h3>
-      <p className="text-neutral-300">{item.school}</p>
-      <p className="text-neutral-400 text-sm">
-        {item.start} – {item.end}
-      </p>
-
-      {item.notes && <p className="mt-2 text-neutral-300">{item.notes}</p>}
+      {/* Reserve space on the right so text never overlaps the logo */}
+      <div className="pr-16 sm:pr-20">
+        <h3 className="text-lg font-semibold text-white">{item.degree}</h3>
+        <p className="text-neutral-300">{item.school}</p>
+        <p className="text-sm text-neutral-400">
+          {item.start} – {item.end}
+        </p>
+        {item.notes && <p className="mt-2 text-neutral-300">{item.notes}</p>}
+      </div>
     </div>
   );
 }
